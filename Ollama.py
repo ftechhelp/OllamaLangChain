@@ -6,7 +6,7 @@ import os
 
 load_dotenv()
 
-class JoshServerOllama:
+class Ollama:
     def __init__(self, model="llama3.2:1b"):
         self.model = model
         self.llm = OllamaLLM(model=model, base_url=os.environ.get("OLLAMA_BASE_URL"))
